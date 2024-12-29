@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      color: white;
+      /* border: 5px solid gold; */
+      display: flex;
+      flex-direction: column;
+      /* width: 50px; */
+    }
+
+    .container2>* {
+      flex-basis: 100vw;
+      height: 170px;
+      border: 10px solid white;
+    }
+
+    .container>div {
+      flex-basis: 100vh;
+
+    }
+
+    /*
+Select all the elements that are the direct
+children of the .container class.
+    */
+
+    .red {
+      background-color: #eb4d4b;
+    }
+
+    .orange {
+      background-color: #f0932b;
+    }
+
+    .yellow {
+      background-color: #f6e58d;
+    }
+
+    .green {
+      background-color: #6ab04c;
+    }
+
+    .blue {
+      background-color: #201cdf;
+    }
+
+    .indigo {
+      background-color: #7927ac;
+    }
+
+    .pink {
+      background-color: #ce2799;
+    }
+
+    .brown {
+      background-color: rgb(69, 33, 6);
+    }
+
+    .white {
+      background-color: white;
+      color: black;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50vh;
+    }
+
+    h1 {
+      color: black;
+      font-size: 5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1> ألوان ﻓِﻲ العربية</h1>
+      <div class="container2">
+        <div class="red"></div>
+        <div class="orange"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="indigo"></div>
+        <div class="pink"></div>
+      </div>
+    </div>
+    <div class="red">
+      <h2> أحمر </h2>
+    </div>
+    <div class="orange">
+      <h2>برتقالي</h2>
+    </div>
+    <div class="yellow">
+      <h2>أصفر</h2>
+    </div>
+    <div class="green">
+      <h2>أخضر</h2>
+    </div>
+    <div class="blue">
+      <h2>أزرق</h2>
+    </div>
+    <div class="indigo">
+      <h2>بنفسجي</h2>
+    </div>
+    <div class="pink">
+      <h2>وردي</h2>
+    </div>
+    <div class="brown">
+      <h2>بني</h2>
+    </div>
+    <div class="white">
+      <h2>أبيض</h2>
+    </div>
+    <div class="black">
+      <h2>أسود</h2>
+    </div>
+  </div>
+
+</body>
+
+</html>
